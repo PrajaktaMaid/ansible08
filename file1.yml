@@ -1,0 +1,7 @@
+- hosts: webserver
+  tasks:
+  - name: creating a file in /tmp
+    file:
+       name: file1
+       path: /tmp/file1
+       state: touch
